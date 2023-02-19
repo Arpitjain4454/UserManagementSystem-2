@@ -1,3 +1,4 @@
+
 # User Management System
 This is a simple user management system built using the Spring framework. It provides endpoints for adding, updating, getting, and deleting user information.
 
@@ -28,7 +29,14 @@ This is a simple user management system built using the Spring framework. It pro
 - `updateUserlnfo`: Updates a user's information.
 - `deleteUser`: Deletes a user from the system.
 
-# Repository Layer
+## Service Layer
+- `addUser`: Validates the user input and saves the user to the database.
+- `getUser`: Retrieves a user from the repository.
+- `getAllUser`: Retrieves all users from the repository.
+- `updateUserlnfo`: Validates the user input and updates the user in the repository.
+- `deleteUser`: Deletes a user from the repository.
+
+## Repository Layer
 - `save`: Saves a user to the database.
 - `findById`: Finds a user in the database by ID.
 - `findAll`: Finds all users in the database.
@@ -58,3 +66,5 @@ This is a simple user management system built using the Spring framework. It pro
 
 # Project Summary
 ##### This project demonstrates how to build a simple user management system using the Spring framework. It provides endpoints for adding, updating, getting, and deleting user information, and uses the H2 in-memory database to persist the data. The project uses a layered architecture, separating the controller, service, and repository layers, and follows good practices for validation and error handling.
+
+
